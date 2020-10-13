@@ -18,7 +18,7 @@ namespace PinCodeEmailValidator
         }
         public void IsValidatePinCode()
         {
-            string pinCodeRegex = @"[0-9]{6}$";
+            string pinCodeRegex = @"^[0-9]{6}$";
             if (Regex.IsMatch(pinCodeNum, pinCodeRegex))
             {
                 Console.WriteLine("Pin Code is Validated. You are good to go!");
