@@ -20,7 +20,7 @@ namespace PinCodeEmailValidator
         //Matching the entered pin code with regex pattern by using Regex.IsMatch(a,b);
         public void IsValidatePinCode()
         {
-            string pinCodeRegex = @"^[0-9]{3}[ ]*[0-9]{3}$";
+            string pinCodeRegex = @"^[0-9]{3}[ ]?[0-9]{3}$";
             if (Regex.IsMatch(pinCodeNum, pinCodeRegex))
             {
                 Console.WriteLine("Pin Code is Validated. You are good to go!");

@@ -57,7 +57,7 @@ x64/
 *.pidb
 *.log
 *.scc
-
+*.csproj
 # OS generated files #
 .DS_Store*
 Icon?
