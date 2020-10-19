@@ -10,14 +10,18 @@ namespace PinCodeEmailValidator
     {
         string pinCodeNum;
 
-        //Taking User Pin Code Input and storing in variable - 'pinCodeNum'
+        /// <summary>
+        /// Enters the pin code. Taking User Pin Code Input and storing in variable - 'pinCodeNum'
+        /// </summary>
         public void EnterPinCode()
         {
             Console.WriteLine("Please enter Pin Code:");
             string pinCodeNum = Console.ReadLine();
             this.pinCodeNum = pinCodeNum;
         }
-        //Matching the entered pin code with regex pattern by using Regex.IsMatch(a,b);
+        /// <summary>
+        /// Determines whether [is validate pin code]. Matching the entered pin code with regex pattern by using Regex.IsMatch(a,b);
+        /// </summary>
         public void IsValidatePinCode()
         {
             string pinCodeRegex = @"^[0-9]{3}[ ]?[0-9]{3}$";
