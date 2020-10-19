@@ -22,7 +22,7 @@ namespace PinCodeEmailValidator
         /// </summary>
         public void IsValidEmail()
         {
-            string eMailRegex = @"^[a-z]+@(bridgelabz)[\.](co)[a-z\.]*$";
+            string eMailRegex = @"^[a-z\d_+-]+[\._+-a-z]*@(bridgelabz)[\.](co)[a-z\.]*$";
             if(Regex.IsMatch(eMail, eMailRegex))
             {
                 Console.WriteLine("Email Validated.");
